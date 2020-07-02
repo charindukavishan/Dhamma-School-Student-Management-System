@@ -109,12 +109,12 @@ public class ResultsByCourse extends javax.swing.JFrame {
         jScrollPane5.setViewportView(courseTable4);
 
         midlabel.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
-        midlabel.setText("Module ID:");
+        midlabel.setText("Subject ID:");
 
         mid.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
 
         modulenamelabel.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
-        modulenamelabel.setText("Module Name:");
+        modulenamelabel.setText("Subject Name:");
 
         mname.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
 

@@ -56,22 +56,14 @@ public class SRegister extends javax.swing.JFrame {
     private void initComponents() {
 
         UName = new javax.swing.JLabel();
-        lEmail = new javax.swing.JLabel();
-        email1 = new javax.swing.JLabel();
         email2 = new javax.swing.JLabel();
         email3 = new javax.swing.JLabel();
-        email4 = new javax.swing.JLabel();
         uName = new javax.swing.JTextField();
-        email = new javax.swing.JTextField();
         fName = new javax.swing.JTextField();
         ageField = new javax.swing.JTextField();
-        nic = new javax.swing.JTextField();
-        password = new javax.swing.JPasswordField();
         jButton1 = new javax.swing.JButton();
         regFee = new javax.swing.JTextField();
         email5 = new javax.swing.JLabel();
-        paidAmount = new javax.swing.JTextField();
-        email6 = new javax.swing.JLabel();
         email7 = new javax.swing.JLabel();
         semester = new javax.swing.JComboBox<>();
 
@@ -80,30 +72,15 @@ public class SRegister extends javax.swing.JFrame {
         UName.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         UName.setText("User Name");
 
-        lEmail.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        lEmail.setText("Email");
-
-        email1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        email1.setText("Password");
-
         email2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         email2.setText("Full Name");
 
         email3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         email3.setText("Age");
 
-        email4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        email4.setText("NIC");
-
         uName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 uNameActionPerformed(evt);
-            }
-        });
-
-        email.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                emailActionPerformed(evt);
             }
         });
 
@@ -116,12 +93,6 @@ public class SRegister extends javax.swing.JFrame {
         ageField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ageFieldActionPerformed(evt);
-            }
-        });
-
-        nic.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nicActionPerformed(evt);
             }
         });
 
@@ -142,17 +113,8 @@ public class SRegister extends javax.swing.JFrame {
         email5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         email5.setText("Reistration Fee");
 
-        paidAmount.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                paidAmountActionPerformed(evt);
-            }
-        });
-
-        email6.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        email6.setText("Paid Amount");
-
         email7.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        email7.setText("Semester");
+        email7.setText("Grade");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -161,79 +123,54 @@ public class SRegister extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addGroup(layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(email7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addComponent(email5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(UName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(lEmail, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(email1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(email2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(email3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(email4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                            .addComponent(email6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(88, 88, 88)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(fName, javax.swing.GroupLayout.DEFAULT_SIZE, 547, Short.MAX_VALUE)
-                            .addComponent(ageField)
-                            .addComponent(nic)
-                            .addComponent(uName)
-                            .addComponent(email)
-                            .addComponent(password)
-                            .addComponent(regFee)
-                            .addComponent(paidAmount)
-                            .addComponent(semester, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                    .addComponent(email3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(88, 88, 88)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(fName, javax.swing.GroupLayout.DEFAULT_SIZE, 547, Short.MAX_VALUE)
+                                    .addComponent(ageField)
+                                    .addComponent(uName)
+                                    .addComponent(regFee)))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(email7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(semester, javax.swing.GroupLayout.PREFERRED_SIZE, 547, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(48, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(UName)
-                            .addComponent(uName, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(32, 32, 32)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lEmail)
-                            .addComponent(email, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(32, 32, 32)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(email1)
-                            .addComponent(password, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(32, 32, 32)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(email2)
-                            .addComponent(fName, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(32, 32, 32)
-                        .addComponent(email3))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(UName)
+                    .addComponent(uName, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(email2)
+                    .addComponent(fName, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(email3)
                     .addComponent(ageField, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(32, 32, 32)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(email4, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(nic, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(34, 34, 34)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(email5, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(regFee, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(email6, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(paidAmount, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(email5)
+                    .addComponent(regFee, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(email7)
                     .addComponent(semester, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(13, 13, 13)
+                .addGap(18, 18, 18)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(12, 12, 12))
         );
 
         pack();
@@ -243,10 +180,6 @@ public class SRegister extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_uNameActionPerformed
 
-    private void emailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_emailActionPerformed
-
     private void fNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fNameActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_fNameActionPerformed
@@ -255,30 +188,26 @@ public class SRegister extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_ageFieldActionPerformed
 
-    private void nicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nicActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_nicActionPerformed
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         
         String uName = this.uName.getText();
-        String email = this.email.getText();
-        String password = String.copyValueOf(this.password.getPassword());
+//        String email = this.email.getText();
+//        String password = String.copyValueOf(this.password.getPassword());
         String fName = this.fName.getText();
         
-        String nic = this.nic.getText();
+//        String nic = this.nic.getText();
         Double registrationFee=0.0D, amntPaid=0.0D;
         int age=0;
         if(!regFee.getText().equals(""))
             registrationFee = Double.parseDouble(regFee.getText());
-        if(!paidAmount.getText().equals(""))
-            amntPaid = Double.parseDouble(paidAmount.getText());
+//        if(!paidAmount.getText().equals(""))
+//            amntPaid = Double.parseDouble(paidAmount.getText());
         if(!ageField.getText().equals(""))
             age = Integer.parseInt(ageField.getText());
         String semesterName = semester.getSelectedItem().toString();
         
         try {
-            StudentTableModel.insert(uName, email, password, fName, age, nic, registrationFee,amntPaid,semesterName);
+            StudentTableModel.insert(uName, fName, age, registrationFee,amntPaid,semesterName);
             JOptionPane.showMessageDialog(this, "User registered succesfully!");
         } catch (SQLIntegrityConstraintViolationException ex){
             JOptionPane.showMessageDialog(null, "User Already exist.");
@@ -290,10 +219,6 @@ public class SRegister extends javax.swing.JFrame {
     private void regFeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regFeeActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_regFeeActionPerformed
-
-    private void paidAmountActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paidAmountActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_paidAmountActionPerformed
 
     /**
      * @param args the command line arguments
@@ -333,20 +258,12 @@ public class SRegister extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel UName;
     private javax.swing.JTextField ageField;
-    private javax.swing.JTextField email;
-    private javax.swing.JLabel email1;
     private javax.swing.JLabel email2;
     private javax.swing.JLabel email3;
-    private javax.swing.JLabel email4;
     private javax.swing.JLabel email5;
-    private javax.swing.JLabel email6;
     private javax.swing.JLabel email7;
     private javax.swing.JTextField fName;
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel lEmail;
-    private javax.swing.JTextField nic;
-    private javax.swing.JTextField paidAmount;
-    private javax.swing.JPasswordField password;
     private javax.swing.JTextField regFee;
     private javax.swing.JComboBox<String> semester;
     private javax.swing.JTextField uName;

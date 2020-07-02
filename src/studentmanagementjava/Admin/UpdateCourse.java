@@ -93,7 +93,7 @@ public class UpdateCourse extends javax.swing.JFrame {
 
         jLabel14.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
         jLabel14.setForeground(java.awt.Color.blue);
-        jLabel14.setText("Update Course");
+        jLabel14.setText("Update Subject");
 
         modid.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -102,10 +102,10 @@ public class UpdateCourse extends javax.swing.JFrame {
         });
 
         UName.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
-        UName.setText("Module ID");
+        UName.setText("Subject ID");
 
         lEmail.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
-        lEmail.setText("Module Name");
+        lEmail.setText("Subject Name");
 
         modname.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -126,7 +126,7 @@ public class UpdateCourse extends javax.swing.JFrame {
         });
 
         email3.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
-        email3.setText("Semester");
+        email3.setText("Grade");
 
         jButton1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8-update-64.png"))); // NOI18N
@@ -170,7 +170,7 @@ public class UpdateCourse extends javax.swing.JFrame {
                             .addComponent(moddescription)))
                     .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 684, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(91, Short.MAX_VALUE))
+                .addContainerGap(87, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

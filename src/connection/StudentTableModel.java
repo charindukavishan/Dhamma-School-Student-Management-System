@@ -16,19 +16,19 @@ import java.sql.SQLException;
  */
 public class StudentTableModel {
 
-    public static void insert(String uname,String email,String password,String fname,int age,String nic,double regFee,double paidAmount, String semester) throws SQLException{
+    public static void insert(String uname,String fname,int age,double regFee,double paidAmount, String semester) throws SQLException{
         PreparedStatement quary = MySqlConnection.getInstance().connection.prepareStatement("insert into student"
-                + " (uname,email,password,fname,age,nic,registrationFee,paidAmount,idsem)"
-                + " values (?,?,?,?,?,?,?,?,(select idsemester from semester where name=?))");
+                + " (uname,fname,age,registrationFee,paidAmount,idsem)"
+                + " values (?,?,?,?,?,(select idsemester from semester where name=?))");
         quary.setString(1, uname);
-        quary.setString(2, email);
-        quary.setString(3, password);
-        quary.setString(4, fname);
-        quary.setInt(5, age);
-        quary.setString(6, nic);
-        quary.setDouble(7,regFee);
-        quary.setDouble(8,paidAmount);
-        quary.setString(9, semester);
+//        quary.setString(2, email);
+//        quary.setString(3, password);
+        quary.setString(2, fname);
+        quary.setInt(3, age);
+//        quary.setString(6, nic);
+        quary.setDouble(4,regFee);
+        quary.setDouble(5,paidAmount);
+        quary.setString(6, semester);
         quary.executeUpdate();
     }
     

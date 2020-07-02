@@ -22,15 +22,15 @@ public class CourseTableModel {
         return  preparedStatement.executeQuery();
     }
     
-    public static void addCourse(String moduleid,String name,String semesterName,double fee,String description) throws SQLException{
+    public static void addCourse(String moduleid,String name,String semesterName,String description) throws SQLException{
         Connection con = MySqlConnection.getInstance().connection;
-        PreparedStatement preparedStatement = con.prepareStatement("INSERT INTO course (moduleid,name,idsem,fee,description)"
-                + " VALUES (?, ?,(select idsemester from semester where name=?), ?, ?)");
+        PreparedStatement preparedStatement = con.prepareStatement("INSERT INTO course (moduleid,name,idsem,description)"
+                + " VALUES (?, ?,(select idsemester from semester where name=?), ?)");
         preparedStatement.setString(1, moduleid);
         preparedStatement.setString(2, name);
         preparedStatement.setString(3, semesterName);
-        preparedStatement.setDouble(4, fee);
-        preparedStatement.setString(5, description);
+//        preparedStatement.setDouble(4, fee);
+        preparedStatement.setString(4, description);
  
         preparedStatement.executeUpdate();
     }

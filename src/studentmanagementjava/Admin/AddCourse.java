@@ -58,8 +58,6 @@ public class AddCourse extends javax.swing.JFrame {
         lEmail = new javax.swing.JLabel();
         modname = new javax.swing.JTextField();
         email1 = new javax.swing.JLabel();
-        email2 = new javax.swing.JLabel();
-        modfee = new javax.swing.JTextField();
         email3 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         semCombo = new javax.swing.JComboBox<>();
@@ -81,10 +79,10 @@ public class AddCourse extends javax.swing.JFrame {
         });
 
         UName.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
-        UName.setText("Module ID");
+        UName.setText("Subject ID");
 
         lEmail.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
-        lEmail.setText("Module Name");
+        lEmail.setText("Subject Name");
 
         modname.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -95,17 +93,8 @@ public class AddCourse extends javax.swing.JFrame {
         email1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
         email1.setText("Description");
 
-        email2.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
-        email2.setText("Fee");
-
-        modfee.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                modfeeActionPerformed(evt);
-            }
-        });
-
         email3.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
-        email3.setText("Semester");
+        email3.setText("Grade");
 
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
@@ -132,26 +121,24 @@ public class AddCourse extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(55, 55, 55)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 718, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(jPanel1Layout.createSequentialGroup()
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(UName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(lEmail, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(email1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(email2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(email3, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGap(88, 88, 88)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(semCombo, 0, 547, Short.MAX_VALUE)
-                                .addComponent(modfee)
                                 .addComponent(modid)
                                 .addComponent(modname)
-                                .addComponent(moddescription)))
-                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 718, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(66, Short.MAX_VALUE))
+                                .addComponent(moddescription)))))
+                .addContainerGap(62, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -170,20 +157,16 @@ public class AddCourse extends javax.swing.JFrame {
                     .addComponent(modname, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(32, 32, 32)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(moddescription, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(email1)
-                        .addGap(37, 37, 37)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(email2)
-                            .addComponent(modfee, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(32, 32, 32)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(30, 30, 30)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(email3)
-                            .addComponent(semCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(moddescription, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
+                            .addComponent(semCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(29, 29, 29)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(46, 46, 46))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -194,7 +177,7 @@ public class AddCourse extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -208,15 +191,11 @@ public class AddCourse extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_modnameActionPerformed
 
-    private void modfeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modfeeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_modfeeActionPerformed
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         
         try {
             CourseTableModel.addCourse(modid.getText(),modname.getText(),
-                    semCombo.getSelectedItem().toString(),Double.parseDouble(modfee.getText()),moddescription.getText());
+                    semCombo.getSelectedItem().toString(),moddescription.getText());
             JOptionPane.showMessageDialog(this, "Course Module "+modname.getText()+" added succesfully!");
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, e.getMessage());
@@ -267,7 +246,6 @@ public class AddCourse extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel UName;
     private javax.swing.JLabel email1;
-    private javax.swing.JLabel email2;
     private javax.swing.JLabel email3;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel14;
@@ -275,7 +253,6 @@ public class AddCourse extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JLabel lEmail;
     private javax.swing.JTextField moddescription;
-    private javax.swing.JTextField modfee;
     private javax.swing.JTextField modid;
     private javax.swing.JTextField modname;
     private javax.swing.JComboBox<String> semCombo;
