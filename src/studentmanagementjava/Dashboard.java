@@ -42,7 +42,7 @@ public class Dashboard extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(63, 125, 255));
+        jPanel1.setBackground(new java.awt.Color(255, 189, 1));
         jPanel1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel1MouseClicked(evt);
@@ -88,7 +88,7 @@ public class Dashboard extends javax.swing.JFrame {
                     .addContainerGap(109, Short.MAX_VALUE)))
         );
 
-        jPanel3.setBackground(new java.awt.Color(63, 125, 255));
+        jPanel3.setBackground(new java.awt.Color(255, 189, 1));
         jPanel3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel3MouseClicked(evt);
@@ -128,7 +128,7 @@ public class Dashboard extends javax.swing.JFrame {
                 .addGap(51, 51, 51))
         );
 
-        jPanel4.setBackground(java.awt.Color.blue);
+        jPanel4.setBackground(new java.awt.Color(255, 102, 51));
 
         jLabel4.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 30)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -144,11 +144,9 @@ public class Dashboard extends javax.swing.JFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel4)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel6)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel6))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -195,21 +193,21 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel3MouseClicked
 
     private void jPanel1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MouseEntered
-        jPanel1.setBackground(new java.awt.Color(0, 0, 255));
+        jPanel1.setBackground(new java.awt.Color(255,157,30));
         jPanel1.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
     }//GEN-LAST:event_jPanel1MouseEntered
 
     private void jPanel1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MouseExited
-        jPanel1.setBackground(new java.awt.Color(63, 125, 255));
+        jPanel1.setBackground(new java.awt.Color(255,189,1));
     }//GEN-LAST:event_jPanel1MouseExited
 
     private void jPanel3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseEntered
-        jPanel3.setBackground(new java.awt.Color(0, 0, 255));
+        jPanel3.setBackground(new java.awt.Color(255,157,30));
         jPanel3.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
     }//GEN-LAST:event_jPanel3MouseEntered
 
     private void jPanel3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseExited
-        jPanel3.setBackground(new java.awt.Color(63, 125, 255));
+        jPanel3.setBackground(new java.awt.Color(255,189,1));
     }//GEN-LAST:event_jPanel3MouseExited
 
     private void jPanel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MouseClicked

@@ -79,7 +79,7 @@ public class AdminLogin extends javax.swing.JFrame {
             }
         });
 
-        jPanel1.setBackground(java.awt.Color.blue);
+        jPanel1.setBackground(new java.awt.Color(255, 153, 51));
 
         jLabel3.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 36)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));

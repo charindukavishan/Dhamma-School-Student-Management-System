@@ -40,7 +40,8 @@ public class AdminHome extends javax.swing.JFrame {
      * Creates new form Home
      */
     javax.swing.JLabel activeLable ;
-    Color color =new java.awt.Color(7, 47, 95);
+    Color color =new java.awt.Color(255, 123, 19);
+    Color activeColor =new java.awt.Color(255, 189, 1);
     public AdminHome() {
         initComponents();
         this.updateProfille();
@@ -152,7 +153,7 @@ public class AdminHome extends javax.swing.JFrame {
     }
     
      private void activeClass(javax.swing.JLabel lable){
-        lable.setBackground(Color.blue);
+        lable.setBackground(activeColor);
         if(activeLable!=null)
         activeLable.setBackground(color);
         activeLable = lable;
@@ -221,7 +222,7 @@ public class AdminHome extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
-        jPanel1.setBackground(java.awt.Color.blue);
+        jPanel1.setBackground(new java.awt.Color(255, 91, 7));
 
         jLabel2.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 48)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -275,7 +276,7 @@ public class AdminHome extends javax.swing.JFrame {
 
         jPanel4.setBackground(java.awt.SystemColor.inactiveCaption);
 
-        jLabel6.setBackground(new java.awt.Color(7, 47, 95));
+        jLabel6.setBackground(new java.awt.Color(255, 123, 19));
         jLabel6.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -302,7 +303,7 @@ public class AdminHome extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setBackground(new java.awt.Color(7, 47, 95));
+        jLabel3.setBackground(new java.awt.Color(255, 123, 19));
         jLabel3.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -323,7 +324,7 @@ public class AdminHome extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setBackground(new java.awt.Color(7, 47, 95));
+        jLabel4.setBackground(new java.awt.Color(255, 123, 19));
         jLabel4.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -341,7 +342,7 @@ public class AdminHome extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setBackground(new java.awt.Color(7, 47, 95));
+        jLabel5.setBackground(new java.awt.Color(255, 123, 19));
         jLabel5.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -981,22 +982,22 @@ public class AdminHome extends javax.swing.JFrame {
 
     private void jLabel6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseEntered
          jLabel6.setCursor(Cursor.getPredefinedCursor(12));
-         jLabel6.setBackground(Color.blue);
+         jLabel6.setBackground(activeColor);
     }//GEN-LAST:event_jLabel6MouseEntered
 
     private void jLabel3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseEntered
         jLabel3.setCursor(Cursor.getPredefinedCursor(12));
-        jLabel3.setBackground(Color.blue);
+        jLabel3.setBackground(activeColor);
     }//GEN-LAST:event_jLabel3MouseEntered
 
     private void jLabel4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseEntered
         jLabel4.setCursor(Cursor.getPredefinedCursor(12));
-        jLabel4.setBackground(Color.blue);
+        jLabel4.setBackground(activeColor);
     }//GEN-LAST:event_jLabel4MouseEntered
 
     private void jLabel5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseEntered
         jLabel5.setCursor(Cursor.getPredefinedCursor(12));
-        jLabel5.setBackground(Color.blue);
+        jLabel5.setBackground(activeColor);
     }//GEN-LAST:event_jLabel5MouseEntered
 
     private void jLabel6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseExited
